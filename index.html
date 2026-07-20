@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ruined Garden — Fez Medina</title>
+<meta name="description" content="A reclaimed ruin turned garden restaurant in the heart of the Fez medina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<div class="grain"></div>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-mark">
+    <span class="nav-mark-line1">The Ruined</span>
+    <span class="nav-mark-line2">Garden</span>
+  </a>
+  <div class="nav-links">
+    <a href="#story" data-hover>The Ruin</a>
+    <a href="#table" data-hover>The Table</a>
+    <a href="#menu" data-hover>Menu</a>
+    <a href="#garden" data-hover>The Garden</a>
+    <a href="#reviews" data-hover>Reviews</a>
+    <a href="#visit" data-hover>Visit</a>
+  </div>
+  <a href="#visit" class="nav-cta" data-hover>Reserve</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg" id="heroBg">
+    <video class="hero-bg-layer" id="heroVideo" data-variant="video"
+           muted loop playsinline preload="none"
+           poster="assets/photo-1.jpg">
+      <source src="assets/video-1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-bg-layer hero-bg-image kenburns-a" data-variant="day"
+         style="background-image:url('assets/photo-2.jpg')"></div>
+    <div class="hero-bg-layer hero-bg-image kenburns-b" data-variant="evening"
+         style="background-image:url('assets/photo-3.jpg')"></div>
+    <div class="hero-bg-layer hero-bg-image kenburns-a" data-variant="night"
+         style="background-image:url('assets/photo-4.jpg')"></div>
+  </div>
+
+  <div class="hero-canvas-wrap">
+    <canvas id="blobCanvas"></canvas>
+  </div>
+  <div class="hero-vignette"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Fez el&#8209;Bali &middot; Medina of Fez</p>
+    <h1 class="hero-title">
+      <span class="line">The Ruined</span>
+      <span class="line line-italic">Garden</span>
+    </h1>
+    <p class="hero-sub">A crumbling 14th&#8209;century riad, left to the fig trees and the birds &mdash; now a garden where lunch runs slow and the tagines arrive still singing from the coals.</p>
+    <div class="hero-actions">
+      <a href="#table" class="btn btn-primary" data-hover>See the table</a>
+      <a href="#visit" class="btn btn-ghost" data-hover>Find the door</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue" data-hover>
+    <span>Descend into the garden</span>
+    <div class="scroll-cue-line"><div class="scroll-cue-drop"></div></div>
+  </div>
+</header>
+
+<main>
+
+  <section class="story" id="story">
+    <div class="story-grain-media reveal">
+      <img src="assets/photo-5.jpg" alt="A fire pit glowing at night among the garden's plants and lanterns.">
+    </div>
+    <div class="story-text">
+      <p class="section-eyebrow reveal">01 &mdash; The Ruin</p>
+      <h2 class="section-title reveal">Nobody built this garden.<br><em>It simply refused to stay a ruin.</em></h2>
+      <p class="reveal">Behind an unmarked door in the old medina sits a house that gave up being a house a long time ago. The roof went first, then the walls softened, and the courtyard filled quietly with banana leaf, bougainvillea and a fig tree that now shades half the tables.</p>
+      <p class="reveal">We didn't restore it. We fed it &mdash; a firepit where the reception room used to be, tagines lit at dawn where a family once slept, and glasses of orange juice sweating onto tiled tables that remember four centuries of rain.</p>
+      <div class="story-stats reveal">
+        <div class="stat">
+          <span class="stat-num">2013</span>
+          <span class="stat-label">the year we opened our doors</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">walled garden, open to the sky</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">All</span>
+          <span class="stat-label">day, breakfast to firelight</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="table" id="table">
+    <div class="table-head">
+      <p class="section-eyebrow reveal">02 &mdash; The Table</p>
+      <h2 class="section-title reveal">What comes out of the kitchen<br class="br-desktop"><em>depends on the morning market.</em></h2>
+      <p class="table-intro reveal">Everything is cooked to order in copper and clay, over charcoal, by cooks who learned these recipes at home before they learned them for guests. Nothing is plated to look still &mdash; it keeps cooking at your table.</p>
+    </div>
+
+    <div class="dish-grid">
+
+      <article class="dish-card dish-card--wide reveal" data-hover>
+        <div class="dish-media"><img src="assets/photo-6.jpg" alt="Chicken tagine with preserved lemon and olives, served with fresh orange juice."></div>
+        <div class="dish-body">
+          <span class="dish-tag">Signature</span>
+          <h3>Tagine of chicken, preserved lemon &amp; olive</h3>
+          <p>Slow&#8209;braised with ginger, saffron and onion until the sauce turns to silk. Served the way it's always been served here &mdash; still bubbling, with bread for scooping.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-hover>
+        <div class="dish-media"><img src="assets/photo-7.jpg" alt="Baked eggs in spiced tomato sauce, a Ruined Garden breakfast classic."></div>
+        <div class="dish-body">
+          <span class="dish-tag">Morning</span>
+          <h3>Eggs baked in spiced tomato</h3>
+          <p>Our version of the garden's breakfast bowl &mdash; merguez, cumin and fresh coriander, eaten under the fig tree with the first coffee.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-hover>
+        <div class="dish-media"><img src="assets/photo-8.jpg" alt="Sardines stuffed and cooked in a copper tagine with chermoula and peppers."></div>
+        <div class="dish-body">
+          <span class="dish-tag">From the coast</span>
+          <h3>Sardines in chermoula, copper tagine</h3>
+          <p>Rolled around a garlic&#8209;herb chermoula and finished in tomato with sweet pepper. A short drive from the Atlantic, a long way from ordinary.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-hover>
+        <div class="dish-media"><img src="assets/photo-9.jpg" alt="Pan-seared salmon over lemon couscous with cucumber and tomato."></div>
+        <div class="dish-body">
+          <span class="dish-tag">Lighter</span>
+          <h3>Seared salmon, lemon couscous</h3>
+          <p>Crisp&#8209;skinned and set over couscous tossed with cucumber, tomato and mint &mdash; the one dish on the menu that argues for a siesta after.</p>
+        </div>
+      </article>
+
+      <article class="dish-card dish-card--wide reveal" data-hover>
+        <div class="dish-media"><img src="assets/photo-10.jpg" alt="Slow-cooked lamb shank with roasted root vegetables."></div>
+        <div class="dish-body">
+          <span class="dish-tag">For the table</span>
+          <h3>Lamb shank, roasted roots</h3>
+          <p>Cooked until the bone slides free on its own, surrounded by turnip, carrot and courgette that spent the afternoon in the same pot.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-hover>
+        <div class="dish-media"><img src="assets/photo-11.jpg" alt="Tagine with prunes, apricots and toasted almonds."></div>
+        <div class="dish-body">
+          <span class="dish-tag">Sweet &amp; savoury</span>
+          <h3>Tagine of prune, apricot &amp; almond</h3>
+          <p>The classic Fassi pairing of meat and fruit, finished with toasted almonds &mdash; sweetness used the way this city has always used it, sparingly and on purpose.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-hover>
+        <div class="dish-media"><img src="assets/photo-12.jpg" alt="Sweet pastilla dusted with cinnamon and icing sugar, served with orange slices."></div>
+        <div class="dish-body">
+          <span class="dish-tag">To finish</span>
+          <h3>Pastilla, orange &amp; cinnamon</h3>
+          <p>Warm filo, a soft vegetable filling, cinnamon traced in lines across icing sugar. Cut it while it's still crackling.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-hover>
+        <div class="dish-media"><img src="assets/photo-13.jpg" alt="A trio of Moroccan salads: zaalouk, potato salad and cooked pepper salad."></div>
+        <div class="dish-body">
+          <span class="dish-tag">To share</span>
+          <h3>Trio of garden salads</h3>
+          <p>Smoked aubergine zaalouk, potato with herbs, and sweet pepper &mdash; the quiet dishes that make everything else taste better.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="menu-head">
+      <p class="section-eyebrow reveal">Full Menu</p>
+      <h2 class="section-title reveal">Everything on offer.<br><em>Written down, for once.</em></h2>
+    </div>
+
+    <div class="menu-columns">
+
+      <div class="menu-col reveal">
+        <h3 class="menu-col-title">Food</h3>
+
+        <div class="menu-group">
+          <h4>Soups</h4>
+          <div class="menu-item"><span>Harira</span><span class="menu-dots"></span><span>50dh</span></div>
+          <div class="menu-item"><span>Besara</span><span class="menu-dots"></span><span>50dh</span></div>
+          <div class="menu-item"><span>Soup of the Day</span><span class="menu-dots"></span><span>50dh</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Stews</h4>
+          <div class="menu-item"><span>White Beans Stew</span><span class="menu-dots"></span><span>50dh</span></div>
+          <div class="menu-item"><span>Lentils Stew</span><span class="menu-dots"></span><span>50dh</span></div>
+          <div class="menu-item"><span>Add egg</span><span class="menu-dots"></span><span>10dh</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Starters</h4>
+          <div class="menu-item"><span>Smoked Eggplants and Cheese</span><span class="menu-dots"></span><span>80dh</span></div>
+          <div class="menu-item"><span>Moroccan Trio Salade</span><span class="menu-dots"></span><span>80dh</span></div>
+          <div class="menu-item"><span>Moroccan Green Salade</span><span class="menu-dots"></span><span>30dh</span></div>
+          <div class="menu-item"><span>Sardines with Fresh Salade</span><span class="menu-dots"></span><span>90dh</span></div>
+          <div class="menu-item"><span>Seffa with Caramelized Onions and Raisins</span><span class="menu-dots"></span><span>60dh</span></div>
+          <div class="menu-item"><span>Briwat Trio &mdash; Chicken / Veg / Beef</span><span class="menu-dots"></span><span>80dh</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Main Courses</h4>
+          <div class="menu-item"><span>Chicken Pastilla</span><span class="menu-dots"></span><span>160dh</span></div>
+          <div class="menu-item"><span>Vegetarian Pastilla</span><span class="menu-dots"></span><span>130dh</span></div>
+          <div class="menu-item"><span>Vegetarian Tajine</span><span class="menu-dots"></span><span>100dh</span></div>
+          <div class="menu-item">
+            <span>Lamb Tajine<br><small>Lamb with caramelized onions, prunes and apricots</small></span>
+            <span class="menu-dots"></span><span>150dh</span>
+          </div>
+          <div class="menu-item">
+            <span>Chicken Refissa<br><small>Steamed pastry with lentils, chicken, eggs and fenugreek</small></span>
+            <span class="menu-dots"></span><span>150dh</span>
+          </div>
+          <div class="menu-item">
+            <span>Chicken Daghmira<br><small>Chicken with caramelized onions, lemon and olives</small></span>
+            <span class="menu-dots"></span><span>150dh</span>
+          </div>
+          <div class="menu-item">
+            <span>Sardines Tajine<br><small>Cooked sardines with tomato sauce and bell pepper</small></span>
+            <span class="menu-dots"></span><span>130dh</span>
+          </div>
+          <div class="menu-item">
+            <span>Kefta Tajine<br><small>Beef meatballs with tomato sauce and eggs</small></span>
+            <span class="menu-dots"></span><span>130dh</span>
+          </div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Special Dishes &mdash; To Pre-Order</h4>
+          <div class="menu-item"><span>Pigeon Pastilla</span><span class="menu-dots"></span><span>350dh</span></div>
+          <div class="menu-item">
+            <span>Sephardic Chicken<br><small>Poached with beef stuffing, saffron, eggs and chickpeas</small></span>
+            <span class="menu-dots"></span><span>400dh</span>
+          </div>
+          <div class="menu-item">
+            <span>7 Hours Lamb Mechoui<br><small>1kg fresh lamb with vegetarian tajine &mdash; each additional kilo 350dh</small></span>
+            <span class="menu-dots"></span><span>500dh</span>
+          </div>
+        </div>
+
+        <p class="menu-note">A 10% service charge is added for groups of 6 and larger.</p>
+      </div>
+
+      <div class="menu-col reveal">
+        <h3 class="menu-col-title">Drinks</h3>
+
+        <div class="menu-group">
+          <h4>Water</h4>
+          <div class="menu-item"><span>Still Mineral Water &mdash; 0.5L / 1.5L</span><span class="menu-dots"></span><span>10dh / 20dh</span></div>
+          <div class="menu-item"><span>Sparkling Water &mdash; 0.5L / 1L</span><span class="menu-dots"></span><span>15dh / 20dh</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Infusion</h4>
+          <div class="menu-item"><span>Iced Mint Tea</span><span class="menu-dots"></span><span>30dh</span></div>
+          <div class="menu-item"><span>Lemon Verbena</span><span class="menu-dots"></span><span>30dh</span></div>
+          <div class="menu-item"><span>Moroccan Mint Tea</span><span class="menu-dots"></span><span>30dh</span></div>
+          <div class="menu-item"><span>Lipton / Earl Grey / English Breakfast Tea</span><span class="menu-dots"></span><span>30dh</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Juice</h4>
+          <div class="menu-item"><span>Lemonade Sour with Mint</span><span class="menu-dots"></span><span>30 DH</span></div>
+          <div class="menu-item"><span>Fresh Orange Juice</span><span class="menu-dots"></span><span>30 DH</span></div>
+          <div class="menu-item"><span>Dates &amp; Orange Blossom Milk</span><span class="menu-dots"></span><span>40 DH</span></div>
+          <div class="menu-item"><span>Juice of the Day</span><span class="menu-dots"></span><span>40 DH</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Soda</h4>
+          <div class="menu-item"><span>Coca-Cola / Sprite / Tonic Water / Coca-Cola Zero / Salty Preserved Lemon with Sprite</span><span class="menu-dots"></span><span>30 DH</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Coffee &amp; Chocolate <span class="menu-flat">&mdash; all 30dh</span></h4>
+          <div class="menu-item"><span>Espresso</span></div>
+          <div class="menu-item"><span>Machiatto</span></div>
+          <div class="menu-item"><span>Americano</span></div>
+          <div class="menu-item"><span>Cappuccino</span></div>
+          <div class="menu-item"><span>Nus Nus</span></div>
+          <div class="menu-item"><span>Hot Chocolate</span></div>
+          <div class="menu-item"><span>Iced Coffee</span></div>
+          <div class="menu-item"><span>Iced Lattee</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Desserts</h4>
+          <div class="menu-item"><span>Fig &amp; Dates Cake</span><span class="menu-dots"></span><span>60dh</span></div>
+          <div class="menu-item"><span>Chocolate Cake with Prunes and Apricots</span><span class="menu-dots"></span><span>60dh</span></div>
+          <div class="menu-item"><span>Cr&egrave;me Br&ucirc;l&eacute;e with Saffron and Dates</span><span class="menu-dots"></span><span>70dh</span></div>
+          <div class="menu-item"><span>Dark Chocolate Mousse with Ras el Hanout</span><span class="menu-dots"></span><span>70dh</span></div>
+        </div>
+
+        <p class="menu-note">Wifi and social &mdash; @Riadandgarden</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="garden" id="garden">
+    <div class="garden-head">
+      <p class="section-eyebrow reveal">03 &mdash; The Garden</p>
+      <h2 class="section-title reveal">Green by nine in the morning.<br><em>Gold by the time the fire's lit.</em></h2>
+    </div>
+
+    <div class="garden-gallery">
+      <figure class="garden-figure garden-figure--tall reveal" data-hover>
+        <img src="assets/photo-14.jpg" alt="Sunlit garden courtyard with terracotta jars, lanterns and diners among the plants.">
+        <figcaption>Morning light through the banana leaves, breakfast service</figcaption>
+      </figure>
+      <figure class="garden-figure reveal" data-hover>
+        <img src="assets/photo-15.jpg" alt="The courtyard in the early evening, tables laid, fire pit burning.">
+        <figcaption>The courtyard, first candles lit</figcaption>
+      </figure>
+      <figure class="garden-figure reveal" data-hover>
+        <img src="assets/photo-16.jpg" alt="A stained-glass window glowing above the garden at night.">
+        <figcaption>A stained&#8209;glass window, four centuries old, still lit from within</figcaption>
+      </figure>
+      <figure class="garden-figure garden-figure--wide reveal" data-hover>
+        <img src="assets/photo-17.jpg" alt="The fire pit at night surrounded by low tables and string lights.">
+        <figcaption>Late tables, gathered around the coals</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="reviews-head">
+      <p class="section-eyebrow reveal">04 &mdash; What Guests Say</p>
+      <h2 class="section-title reveal">Nobody comes here<br><em>for the paperwork.</em></h2>
+    </div>
+
+    <div class="review-grid">
+      <article class="review-card reveal">
+        <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-quote">&ldquo;Nestled in the busy medina and souk, this lovely green garden oasis was perfect for a quick, authentic Moroccan lunch.&rdquo;</p>
+        <p class="review-by">F6125XSadrianc &middot; 2 months ago</p>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-quote">&ldquo;Authentic Moroccan cuisine in a rustic garden, with great service and ambience. Nicer for couples or an intimate setting than large groups.&rdquo;</p>
+        <p class="review-by">Wendy B, Grenada &middot; May 2026</p>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-quote">&ldquo;A pleasant, modern atmosphere with fantastic food at a great price. No trouble getting a table at 9PM, a common dinner hour here.&rdquo;</p>
+        <p class="review-by">Preston M &middot; Jul 2026</p>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="review-stars" aria-label="4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;<span class="star-empty">&#9733;</span></div>
+        <p class="review-quote">&ldquo;We didn't have a reservation but still got a table. Big portions, a relaxing evening &mdash; the vegetable tajine was a favourite.&rdquo;</p>
+        <p class="review-by">388isabellem &middot; 2 months ago</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="visit-inner">
+      <p class="section-eyebrow reveal">05 &mdash; Visit</p>
+      <h2 class="section-title reveal">Find the door with no sign.<br><em>Knock anyway.</em></h2>
+
+      <div class="visit-grid">
+        <div class="visit-block reveal">
+          <h3>Hours</h3>
+          <dl>
+            <div><dt>Every day</dt><dd>1:00 PM &ndash; 9:30 PM</dd></div>
+          </dl>
+          <p class="visit-note">Same hours, seven days a week &mdash; lunch through late dinner by the fire.</p>
+        </div>
+
+        <div class="visit-block reveal">
+          <h3>Good to know</h3>
+          <ul class="tag-list">
+            <li>Moroccan &amp; Mediterranean</li>
+            <li>Vegetarian &amp; vegan options</li>
+            <li>Halal &middot; gluten&#8209;free options</li>
+            <li>Outdoor seating</li>
+            <li>Reservations &amp; takeout</li>
+            <li>Cards accepted &middot; free wifi</li>
+          </ul>
+        </div>
+
+        <div class="visit-block reveal">
+          <h3>Find us</h3>
+          <p class="visit-address">15 Derb Idrissy<br>Sidi Ahmed Chaoui, Medina<br>Fez 30110, Morocco</p>
+          <p>Deep in Fez el&#8209;Bali &mdash; GPS can wander in the medina, so keep Wi&#8209;Fi on for Google or Apple Maps and you'll land right at the door.</p>
+        </div>
+
+        <div class="visit-block reveal">
+          <h3>Reserve</h3>
+          <p>Tables are limited &mdash; the garden only seats so many under the fig tree. Call ahead, especially for dinner by the fire.</p>
+          <button type="button" class="btn btn-primary" data-hover id="reserveOpenBtn">Reserve</button>
+          <span class="btn btn-ghost" style="margin-left:12px; cursor:default;">+212 6 43 23 00 45</span>
+        </div>
+      </div>
+
+      <div class="visit-map reveal">
+        <iframe
+          class="visit-map-frame"
+          title="The Ruined Garden location map"
+          src="https://maps.google.com/maps?q=Le+Jardin+en+Ruin%2C+15+Derb+Idrissy%2C+Sidi+Ahmed+Chaoui%2C+Fes+30110%2C+Morocco&z=17&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a class="visit-map-link" data-hover
+           href="https://maps.app.goo.gl/7Ewfhf2V29T34L6L8"
+           target="_blank" rel="noopener">
+          Open in Google Maps &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="reserve-overlay" id="reserveOverlay" aria-hidden="true">
+  <div class="reserve-modal" role="dialog" aria-modal="true" aria-labelledby="reserveModalTitle">
+    <button type="button" class="reserve-close" id="reserveCloseBtn" aria-label="Close reservation form">&times;</button>
+    <h3 id="reserveModalTitle">Reserve a table</h3>
+    <p class="reserve-sub">Tell us a little about your visit and we'll confirm on WhatsApp.</p>
+    <form id="reserveForm">
+      <div class="reserve-field">
+        <label for="reserveName">Name</label>
+        <input type="text" id="reserveName" name="reserveName" placeholder="Your name" required>
+      </div>
+      <div class="reserve-row">
+        <div class="reserve-field">
+          <label for="reserveTables">Number of tables</label>
+          <input type="number" id="reserveTables" name="reserveTables" min="1" value="1" required>
+        </div>
+        <div class="reserve-field">
+          <label for="reservePeople">Guests per table</label>
+          <input type="number" id="reservePeople" name="reservePeople" min="1" value="2" required>
+        </div>
+      </div>
+      <div class="reserve-row">
+        <div class="reserve-field">
+          <label for="reserveDate">Date</label>
+          <input type="date" id="reserveDate" name="reserveDate">
+        </div>
+        <div class="reserve-field">
+          <label for="reserveTime">Time</label>
+          <input type="time" id="reserveTime" name="reserveTime">
+        </div>
+      </div>
+      <div class="reserve-field">
+        <label for="reserveNotes">Notes (optional)</label>
+        <textarea id="reserveNotes" name="reserveNotes" rows="2" placeholder="Dietary needs, seating by the fire, etc."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary reserve-submit" data-hover>Continue on WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-mark">The Ruined Garden</div>
+  <p>15 Derb Idrissy, Sidi Ahmed Chaoui, Medina, Fez 30110, Morocco &middot; <span>+212 6 43 23 00 45</span></p>
+  <div class="footer-links">
+    <a href="#top" data-hover>Back to the top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
